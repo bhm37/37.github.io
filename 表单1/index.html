@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			form{
+				width: 300px;
+				height: 600px;
+				background-color: blanchedalmond;
+				position: absolute;
+				margin: auto;
+				left: 0px;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			form div{
+				margin: 15px 0px;
+			}
+			form input[type="submit"]{
+				width: 100px;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="http:\\127.0.0.1/server.php" method="get">
+		<div >
+			<label for="username">用户名：</label>
+			<input type="text" name="username" id="username" />
+		</div>
+		<div >
+			<label for="pwd">密&nbsp;&nbsp;&nbsp;码：</label>
+			<input type="password" name="pwd" id="pwd" />
+		</div>
+		<div >
+			<label for="e_mail">邮&nbsp;&nbsp;&nbsp;箱：</label>
+			<input type="text" name="e_mail" id="e_mail" />
+		</div>
+		<div >
+			<label for="sex">性&nbsp;&nbsp;&nbsp;别：</label>
+			<input type="radio"  checked="checked" />男
+			<input type="radio"  checked="checked" />女
+		</div>
+		
+		<div >
+			<label for="兴趣">兴&nbsp;&nbsp;&nbsp;趣：</label>
+			<input type="checkbox" />唱歌
+			<input type="checkbox" />跳舞
+			<input type="checkbox" />篮球
+			<input type="checkbox" />足球
+
+			<input type="image" src="img/timg.jpg\"/></div>
+		<input type="hidden" />
+		<div >
+			<input type="file" /></div>
+		<div >
+			输入个人网址：<input type="url" />
+			输入电话号码；<input type="tel" /> 
+			搜索关键词：<input type="search" />		
+		</div
+        <div>
+	               选取一种颜色：<input type="color" />
+        </div>
+        <div>
+        	输入数值：<input type="number" name="number1" value="1" min="1" max="20" step="4" />
+        </div>
+        <div>
+		<input type="submit" value="注册" />
+		<input type="reset" />		
+		</div >
+		<div>
+			<input type="date" />
+			<input type="month" />
+			<input type="date" />
+		</div>
+		</form>
+	</body>
+</html>
