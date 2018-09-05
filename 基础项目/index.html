@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>		
+	</head>
+	<body>
+		<input type="button" name="redBturron" id="redBturron" value="设为红色" onclick="color('red')" />
+		<input type="button" name="redBturron" id="redBturron" value="设为黄色" onclick="color('yellow')" />
+		<input type="button" name="redBturron" id="redBturron" value="设为蓝色" onclick="color('blue')" />
+		<!--<input type="button" value="设为自定义颜色" onclick="color('#00ff00')" />-->
+		<input type="color" name="" id="changeColor" value="#00ff00" onchange="chgRandomColor()"/>
+		<script type="text/javascript">
+			function color(color) {
+				document.body.style.backgroundColor = color;
+			}
+			function chgRandomColor(){
+				var changecolor=document.getElementById("changeColor");
+				document.body.style.backgroundColor=changecolor.value;
+			}
+		</script>
+	</body>
+</html>
